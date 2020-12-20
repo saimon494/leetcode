@@ -1,5 +1,6 @@
-package com.leet.array;
+package com.leet;
 
+import com.leet.array.MaxConsecutiveOnes;
 import org.junit.Assert;
 import org.junit.Test;
 
