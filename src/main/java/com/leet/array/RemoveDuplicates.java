@@ -1,15 +1,27 @@
 package com.leet.array;
 
-import java.util.HashSet;
-import java.util.Set;
-
 public class RemoveDuplicates {
     public int removeDuplicates(int[] nums) {
-        Set<Integer> set = new HashSet<>();
+        int key, newSize;
+        int[] newNums;
+        newSize = nums.length;
 
-        for (int i = 0; i < nums.length; i++) {
-            set.add(nums[i]);
+        for (int i = 0; i < newSize - 1; i++) {
+            key = nums[i];
+            for (int j = i + 1; j < newSize; j++) {
+                if (key == nums[j]) {
+                    newSize = newSize - 1;
+                    for (int k = j; k < newSize; k++) {
+                        nums[k] = nums[k + 1];
+                    }
+                    j--;
+                }
+            }
         }
-        return set.toArray().length;
+        newNums = new int[newSize];
+        for (int p = 0; p < newSize; p++) {
+            newNums[p] = nums[p];
+        }
+        return newNums.length;
     }
 }
