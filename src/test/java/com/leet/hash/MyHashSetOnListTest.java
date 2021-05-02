@@ -4,10 +4,10 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MyHashSetOnListTest {
-    MyHashSetOnList hashSet = new MyHashSetOnList();
 
     @Test
     public void whenAddContains() {
+        var hashSet = new MyHashSetOnList();
         hashSet.add(1);
         hashSet.add(2);
         Assert.assertTrue(hashSet.contains(1));
@@ -16,6 +16,7 @@ public class MyHashSetOnListTest {
 
     @Test
     public void whenAddRemoveContainsFalse() {
+        var hashSet = new MyHashSetOnList();
         hashSet.add(1);
         hashSet.add(2);
         hashSet.remove(1);
@@ -24,6 +25,7 @@ public class MyHashSetOnListTest {
 
     @Test
     public void whenAddRemoveContainsTrue() {
+        var hashSet = new MyHashSetOnList();
         hashSet.add(1);
         hashSet.add(2);
         hashSet.remove(1);
@@ -32,6 +34,7 @@ public class MyHashSetOnListTest {
 
     @Test
     public void whenAddRemoveContainsAdd() {
+        var hashSet = new MyHashSetOnList();
         hashSet.add(1);
         hashSet.add(2);
         hashSet.remove(1);
