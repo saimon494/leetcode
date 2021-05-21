@@ -10,7 +10,7 @@ public class RunningSum {
         int[] rsl = new int[nums.length];
         rsl[0] = nums[0];
         for (int i = 1; i < nums.length; i++) {
-            rsl[i] = rsl[i - 1] + nums [i];
+            rsl[i] = rsl[i - 1] + nums[i];
         }
         return rsl;
     }
