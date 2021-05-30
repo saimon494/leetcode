@@ -3,7 +3,12 @@ package com.leet.array;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-
+/**
+ * Given a non-empty array of non-negative integers nums,
+ * the degree of this array is defined as the maximum frequency of any one of its elements.
+ * Your task is to find the smallest possible length of a (contiguous) subarray of nums,
+ * that has the same degree as nums.
+ */
 public class DegreeArray {
 
     public int findShortestSubArray(int[] nums) {
