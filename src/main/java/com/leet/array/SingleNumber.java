@@ -13,9 +13,9 @@ public class SingleNumber {
         }
         return res;
 
-// a    = 0011 1100
-// b    = 0000 1101
-// a^b  = 0011 0001
+    // a    = 0011 1100
+    // b    = 0000 1101
+    // a^b  = 0011 0001
 
 //        int rsl = 0;
 //        var map = new HashMap<Integer, Boolean>();
