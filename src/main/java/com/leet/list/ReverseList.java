@@ -1,10 +1,9 @@
 package com.leet.list;
-
-// Given the head of a singly linked list,
-// reverse the list, and return the reversed list.
-
 public class ReverseList {
-
+    /**
+     * 206. Reverse Linked List
+     * Given the head of a singly linked list, reverse the list, and return the reversed list.
+     */
     public static class ListNode {
 
         private int val;
@@ -25,14 +24,14 @@ public class ReverseList {
             return head;
         }
 
-        ListNode listToDo = head.next;
+        ListNode currentList = head.next;
         ListNode reversedList = head;
 
         reversedList.next = null;
 
-        while (listToDo != null) {
-            ListNode temp = listToDo;
-            listToDo = listToDo.next;
+        while (currentList != null) {
+            ListNode temp = currentList;
+            currentList = currentList.next;
 
             temp.next = reversedList;
             reversedList = temp;
